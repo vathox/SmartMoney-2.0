@@ -1,22 +1,7 @@
 import getVisibleExpenses from '../../selectors/expenses';
 import moment from "moment";
+import expenses from '../fixtures/expenses'
 
-const expenses = [{
-    id: 1,
-    description: 'Car',
-    amount: 193,
-    createdAt: 0
-}, {
-    id: 1,
-    description: 'cTest',
-    amount: 19398,
-    createdAt: moment(0).subtract(4, 'days').valueOf()
-}, {
-    id: 1,
-    description: 'aTest',
-    amount: 6500,
-    createdAt: moment(0).add(4, 'days').valueOf()
-}];
 
 test('should filter by text value', () => {
     const filters = {
