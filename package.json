@@ -43,11 +43,11 @@
     "validator": "^9.1.1"
   },
   "devDependencies": {
-    "webpack": "^3.8.1",
     "enzyme-to-json": "^3.0.1",
-    "express": "4.15.4",
+    "express": "^4.16.2",
     "jest": "^21.2.1",
     "react-test-renderer": "^16.1.1",
+    "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
   }
 }
