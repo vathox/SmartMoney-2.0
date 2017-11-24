@@ -1,11 +1,13 @@
 import React from 'react'
 import ExpenseList from './ExpenseList'
 import ExpenseListFilters from './ExpenseListFilters'
+import ExpensesSummary from './ExpensesSummary'
 
-const SmartMoneyDashboard = (props) =>
+const SmartMoneyDashboard = () =>
     <div>
-        <ExpenseListFilters />
-        <ExpenseList />
+        <ExpenseListFilters/>
+        <ExpensesSummary/>
+        <ExpenseList/>
     </div>
 ;
 
