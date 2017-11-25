@@ -8,6 +8,8 @@ import 'react-dates/lib/css/_datepicker.css'
 import './styles/styles.scss';
 import {addExpense} from './actions/expenses'
 import getVisibleExpenses from './selectors/expenses'
+import './firebase/firebase'
+
 
 
 store.subscribe(() => {
