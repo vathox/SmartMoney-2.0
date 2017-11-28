@@ -11,36 +11,6 @@ const config = {
 
 firebase.initializeApp(config);
 
-firebase.database().ref().set({
-    name: 'Adam',
-    age: '23',
-    location: {
-        city: 'Charleston',
-        country: 'United States of America'
-    }
-}).then(() => {
-    console.log('Data is saved');
-}).catch((e) => {
-    console.log(e)
-});
+const database = firebase.database();
 
-firebase.database().ref('attributes').set({
-    height: '186cm',
-    weight: '77kg'
-});
-
-firebase.database().ref().update({
-    name: 'Nicolas',
-    age: '30',
-    job: 'student'
-});
-
-// firebase.database().ref('age')
-//     .remove()
-//     .then(() =>{
-//         console.log('data removed')
-//     })
-//     .catch((e) =>{
-//         console.log(e)
-//     });
-
+export {firebase, database as default}
