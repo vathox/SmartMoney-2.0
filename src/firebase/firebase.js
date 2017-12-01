@@ -1,12 +1,12 @@
 import * as firebase from 'firebase';
 
 const config = {
-    apiKey: "AIzaSyBwPlR6y-42raoblvFJtrkJ0yRXSwXOebo",
-    authDomain: "smartmoney2-e4eb1.firebaseapp.com",
-    databaseURL: "https://smartmoney2-e4eb1.firebaseio.com",
-    projectId: "smartmoney2-e4eb1",
-    storageBucket: "smartmoney2-e4eb1.appspot.com",
-    messagingSenderId: "434654970601"
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.FIREBASE_DATABASE_URL,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
 };
 
 firebase.initializeApp(config);
