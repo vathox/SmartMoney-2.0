@@ -9,6 +9,7 @@ exports[`should render edit page correctly 1`] = `
         "createdAt": 0,
         "description": "Car",
         "id": 1,
+        "note": "Test note 1",
       }
     }
     onSubmit={[Function]}
