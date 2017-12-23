@@ -11,6 +11,14 @@ export const removeExpense = ({id} = {}) => ({
     id
 });
 
+export const startRemoveExpense = ({id} = {}) => {
+    return (dispatch) => {
+        return database.ref('expenses').child(id).remove().then(() => {  // better way of quering: `expenses/${id}`
+            dispatch(removeExpense({id}))
+        });
+    }
+};
+
 export const startAddExpense = (expenseData = {}) => {
     return (dispacht) => {
         const {
