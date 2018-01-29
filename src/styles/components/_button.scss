@@ -1,0 +1,23 @@
+.button {
+  background: #4885ed;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  font-size: $font-size-large;
+  font-weight: 500;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+}
+
+.button--link{
+  background: none;
+}
+
+.button--secondary{
+  background: #ed2157;
+}
+.button--create{
+  margin-top: $m-size;
+}
