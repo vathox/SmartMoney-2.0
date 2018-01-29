@@ -1,27 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Header correctly 1`] = `
-<div>
-  <h1>
-    SmartMoney 2.0
-  </h1>
-  <NavLink
-    activeClassName="is-active"
-    ariaCurrent="true"
-    exact={true}
-    to="/dashboard"
+<header
+  className="header"
+>
+  <div
+    className="content-container"
   >
-    Dashboard
-  </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    ariaCurrent="true"
-    to="/create"
-  >
-    Add new expense
-  </NavLink>
-  <button>
-    Logout
-  </button>
-</div>
+    <div
+      className="header__content"
+    >
+      <Link
+        className="header__title"
+        exact={true}
+        replace={false}
+        to="/dashboard"
+      >
+        <h1>
+          SmartMoney 2.0
+        </h1>
+      </Link>
+      <button
+        className="button button--link"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</header>
 `;
