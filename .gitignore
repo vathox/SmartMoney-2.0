@@ -5,3 +5,4 @@ public/dist/
 src/playground
 .env.test
 .env.development
+bitbucket-pipelines.yml
